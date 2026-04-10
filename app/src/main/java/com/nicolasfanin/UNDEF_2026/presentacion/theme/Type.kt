@@ -1,4 +1,4 @@
-package com.nicolasfanin.UNDEF_2026.ui.theme
+package com.nicolasfanin.UNDEF_2026.presentacion.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

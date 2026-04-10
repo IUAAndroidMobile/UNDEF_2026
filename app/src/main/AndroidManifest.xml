@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UNDEF_2026">
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".presentacion.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.UNDEF_2026">
@@ -22,11 +22,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".ui.productlist.ProductListActivity"
-            android:exported="false"
-            android:theme="@style/Theme.UNDEF_2026" />
     </application>
 
 </manifest>
