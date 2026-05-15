@@ -1,4 +1,4 @@
-package com.nicolasfanin.UNDEF_2026.presentacion.theme
+package com.nicolasfanin.UNDEF_2026.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

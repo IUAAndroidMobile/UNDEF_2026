@@ -1,4 +1,4 @@
-package com.nicolasfanin.UNDEF_2026.presentacion
+package com.nicolasfanin.UNDEF_2026.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

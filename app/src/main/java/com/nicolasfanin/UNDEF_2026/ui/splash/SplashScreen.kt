@@ -1,4 +1,4 @@
-package com.nicolasfanin.UNDEF_2026.presentacion.splash
+package com.nicolasfanin.UNDEF_2026.ui.splash
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border

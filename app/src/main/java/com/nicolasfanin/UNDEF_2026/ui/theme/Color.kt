@@ -1,4 +1,4 @@
-package com.nicolasfanin.UNDEF_2026.presentacion.theme
+package com.nicolasfanin.UNDEF_2026.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

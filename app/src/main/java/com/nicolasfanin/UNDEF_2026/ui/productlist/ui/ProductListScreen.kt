@@ -1,4 +1,4 @@
-package com.nicolasfanin.UNDEF_2026.presentacion.productlist
+package com.nicolasfanin.UNDEF_2026.ui.productlist.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
@@ -19,6 +19,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.nicolasfanin.UNDEF_2026.R
+import com.nicolasfanin.UNDEF_2026.ui.commonscreen.ErrorScreen
+import com.nicolasfanin.UNDEF_2026.ui.commonscreen.LoadingScreen
+import com.nicolasfanin.UNDEF_2026.ui.productlist.viewmodel.ProductListViewModel
 import com.nicolasfanin.UNDEF_2026.utils.UndefUiStates
 
 @Composable
@@ -34,8 +37,9 @@ fun ProductListScreen(
 
     when (screenState) {
         is UndefUiStates.Loading -> {
-            Text(text = "Cargando...")
+            LoadingScreen()
         }
+
         is UndefUiStates.Success -> {
             val screenData = (screenState as UndefUiStates.Success).screenData
 
@@ -74,14 +78,17 @@ fun ProductListScreen(
             }
 
         }
+
         is UndefUiStates.Error -> {
-            Text("ERROR")
+            val message = (screenState as UndefUiStates.Error).message
+            ErrorScreen(
+                message = message,
+                onRetry = {
+                    productListViewModel.getProductListScreenInfo()
+                }
+            )
         }
     }
-
-
-
-
 }
 
 @Preview(showBackground = true)

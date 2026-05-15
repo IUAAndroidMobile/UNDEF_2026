@@ -4,9 +4,9 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.nicolasfanin.UNDEF_2026.presentacion.productlist.ProductListScreen
-import com.nicolasfanin.UNDEF_2026.presentacion.register.RegisterUserScreen
-import com.nicolasfanin.UNDEF_2026.presentacion.splash.SplashScreen
+import com.nicolasfanin.UNDEF_2026.ui.productlist.ui.ProductListScreen
+import com.nicolasfanin.UNDEF_2026.ui.register.RegisterUserScreen
+import com.nicolasfanin.UNDEF_2026.ui.splash.SplashScreen
 
 @Composable
 fun NavigationApp() {

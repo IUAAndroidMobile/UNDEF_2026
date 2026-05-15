@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UNDEF_2026">
         <activity
-            android:name=".presentacion.MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.UNDEF_2026">

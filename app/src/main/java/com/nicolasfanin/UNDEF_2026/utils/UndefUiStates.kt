@@ -7,7 +7,9 @@ sealed class UndefUiStates {
         val screenData: ScreenData
     ) : UndefUiStates()
 
-    object Error : UndefUiStates()
+    data class Error(
+        val message: String = "Error desconocido"
+    ) : UndefUiStates()
 }
 
 data class ScreenData(

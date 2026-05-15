@@ -7,6 +7,9 @@ fun String.capitalizeWordsUNDEF(): String {
     return this.capitalize(Locale.current)
 }
 
+/**
+ * Funcion de extension que agrega numeros a un string.
+ */
 fun String.agregarNumeros(): String {
     return this + " 1234567890 "
 }
