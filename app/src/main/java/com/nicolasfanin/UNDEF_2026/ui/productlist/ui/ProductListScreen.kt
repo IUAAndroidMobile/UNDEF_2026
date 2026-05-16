@@ -32,7 +32,8 @@ fun ProductListScreen(
     val screenState by productListViewModel.screenState.collectAsState()
 
     LaunchedEffect(Unit) {
-        productListViewModel.getProductListScreenInfo()
+        //productListViewModel.getProductListScreenInfo()
+        productListViewModel.getColorListFromApi()
     }
 
     when (screenState) {
