@@ -7,6 +7,7 @@ import androidx.navigation.compose.rememberNavController
 import com.nicolasfanin.UNDEF_2026.ui.productlist.ui.ProductListScreen
 import com.nicolasfanin.UNDEF_2026.ui.register.RegisterUserScreen
 import com.nicolasfanin.UNDEF_2026.ui.splash.SplashScreen
+import com.nicolasfanin.UNDEF_2026.ui.userpreferences.UserPreferencesScreen
 
 @Composable
 fun NavigationApp() {
@@ -18,13 +19,17 @@ fun NavigationApp() {
             SplashScreen(
                 text = "Bienvenid@s a mi super aplicacion!",
                 onInitButtonClick = { navController.navigate(PRODUCTLIST) },
-                onCreateAccountClick = { navController.navigate(REGISTERUSER) })
+                onCreateAccountClick = { navController.navigate(REGISTERUSER) },
+                onUserPreferencesClick = { navController.navigate(USER_PREFERENCES) })
         }
         composable(PRODUCTLIST) {
             ProductListScreen()
         }
         composable(REGISTERUSER) {
             RegisterUserScreen()
+        }
+        composable(USER_PREFERENCES) {
+            UserPreferencesScreen()
         }
     }
 }
@@ -33,5 +38,6 @@ fun NavigationApp() {
 const val SPLASHSCREEN = "splash_screen"
 const val PRODUCTLIST = "product_list"
 const val REGISTERUSER = "register_user"
+const val USER_PREFERENCES = "user_preferences"
 
 

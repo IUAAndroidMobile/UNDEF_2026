@@ -23,7 +23,8 @@ import androidx.compose.ui.unit.sp
 fun SplashScreen(
     text: String,
     onInitButtonClick: () -> Unit = {},
-    onCreateAccountClick: () -> Unit = {}
+    onCreateAccountClick: () -> Unit = {},
+    onUserPreferencesClick: () -> Unit = {}
 ) {
 
     val context = LocalContext.current
@@ -65,6 +66,18 @@ fun SplashScreen(
             enabled = true
         ) {
             Text("Crear Cuenta")
+        }
+
+        Button(
+            modifier = Modifier
+                .wrapContentSize()
+                .border(2.dp, Color.Red)
+                .background(Color.Yellow)
+                .padding(16.dp),
+            onClick = { onUserPreferencesClick() },
+            enabled = true
+        ) {
+            Text("Preferencias del Usuario")
         }
     }
 }
