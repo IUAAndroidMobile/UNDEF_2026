@@ -24,7 +24,8 @@ fun SplashScreen(
     text: String,
     onInitButtonClick: () -> Unit = {},
     onCreateAccountClick: () -> Unit = {},
-    onUserPreferencesClick: () -> Unit = {}
+    onUserPreferencesClick: () -> Unit = {},
+    onSavedColorsClick: () -> Unit = {}
 ) {
 
     val context = LocalContext.current
@@ -78,6 +79,18 @@ fun SplashScreen(
             enabled = true
         ) {
             Text("Preferencias del Usuario")
+        }
+
+        Button(
+            modifier = Modifier
+                .wrapContentSize()
+                .border(2.dp, Color.Red)
+                .background(Color.Yellow)
+                .padding(16.dp),
+            onClick = { onSavedColorsClick() },
+            enabled = true
+        ) {
+            Text("Colores Guardados")
         }
     }
 }
